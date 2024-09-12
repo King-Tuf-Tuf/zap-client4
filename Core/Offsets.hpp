@@ -1,25 +1,25 @@
 #pragma once
 #include <string>
-// https://www.unknowncheats.me/forum/apex-legends/319804-apex-legends-reversal-structs-offsets.html
-// GameVersion = v3.0.77.28
+// https://www.unknowncheats.me/forum/4197562-post16297.html
+// GameVersion = v3.0.79.51
  
 std::string CheatVersion = "Version 1.1.4";
-std::string GameVersion = "v3.0.79.44"; // [Miscellaneous]->GameVersion
+std::string GameVersion = "v3.0.79.51"; // [Miscellaneous]->GameVersion
  
 // Core
 constexpr long OFF_REGION = 0x140000000; // [Static]->Region
-constexpr long OFF_LEVEL = 0x17ec544; // [Miscellaneous]->LevelName
-constexpr long OFF_LOCAL_PLAYER = 0x23e91f8; // [Miscellaneous]->LocalPlayer
-constexpr long OFF_ENTITY_LIST = 0x1f15f88; // [Miscellaneous]->cl_entitylist
+constexpr long OFF_LEVEL = 0x182c554; // [Miscellaneous]->LevelName
+constexpr long OFF_LOCAL_PLAYER = 0x2429238; // [Miscellaneous]->LocalPlayer
+constexpr long OFF_ENTITY_LIST = 0x1F55FB8; // [Miscellaneous]->cl_entitylist
 constexpr long OFF_NAME_INDEX = 0x38; // NameIndex
-constexpr long OFF_NAME_LIST = 0xd388450; // [Miscellaneous]->NameList
-constexpr long OFF_GAMEMODE = 0x02421250; // [ConVars]->mp_gamemode
+constexpr long OFF_NAME_LIST = 0xd3c9fd0; // [Miscellaneous]->NameList
+constexpr long OFF_GAMEMODE = 0x2461290; // [ConVars]->mp_gamemode
 constexpr long OFF_SQUAD_ID = 0x0344; // [RecvTable.DT_BaseEntity]->m_squadID
 constexpr long OFF_GLOBAL_VARS = 0x17ec040; // [Miscellaneous]->GlobalVars
  
 // HUD
-constexpr long OFF_VIEWRENDER = 0x769b558; // [Miscellaneous]->ViewRender
-constexpr long OFF_VIEWMATRIX = 0x11a350; // [Miscellaneous]->ViewMatrix
+constexpr long OFF_VIEWRENDER = 0x76DD0D8; // [Miscellaneous]->ViewRender
+constexpr long OFF_VIEWMATRIX = 0x11A350; // [Miscellaneous]->ViewMatrix
  
 // Buttons
 constexpr long OFF_INATTACK = 0x0769b658; // [Buttons]->in_attack
@@ -53,7 +53,7 @@ constexpr long OFF_VIEW_ANGLES = 0x2534 - 0x14; // [DataMap.C_Player]->m_ammoPoo
 constexpr long OFF_PUNCH_ANGLES = 0x2438; // [DataMap.C_Player]->m_currentFrameLocalPlayer.m_vecPunchWeapon_Angle
 constexpr long OFF_YAW = 0x223c - 0x8; // [DataMap.C_Player]->m_currentFramePlayer.m_ammoPoolCount - 0x8
 constexpr long OFF_MODELNAME = 0x0030; // [DataMap.C_BaseEntity]->m_ModelName
-constexpr long OFF_OBSERVER_LIST = 0x1f17ee8;   //observerList: 48 8B 0D ? ? ? ? 48 85 C9 74 ? 48 8B 01 FF ? ? 48 85 C0 74 ? 48 63 4E 38
+constexpr long OFF_OBSERVER_LIST = 0x1F57FD8;   //observerList: 48 8B 0D ? ? ? ? 48 85 C9 74 ? 48 8B 01 FF ? ? 48 85 C0 74 ? 48 63 4E 38
 constexpr long OFF_OBSERVER_LIST_IN_ARRAY = 0x974; // 0x964 before
 constexpr long OFF_SKY_DIVE_STATUS = 0x4724; // [DataMap.C_Player]->m_skydiveState
 constexpr long OFF_DUCK_STATUS = 0x2a60; // [DataMap.C_Player]->m_duckState
@@ -64,8 +64,8 @@ constexpr long OFF_GRAPPLE_ATTACHED = 0x2d50; // [RecvTable.DT_Player]->m_grappl
 // Weapon
 constexpr long OFF_WEAPON_HANDLE = 0x1944; // [RecvTable.DT_Player]->m_latestPrimaryWeapons
 constexpr long OFF_WEAPON_INDEX = 0x1788; // [RecvTable.DT_WeaponX]->m_weaponNameIndex
-constexpr long OFF_PROJECTILESCALE = 0x04f4 + 0x19d8; // [WeaponSettings]->projectile_gravity_scale + 0x8
-constexpr long OFF_PROJECTILESPEED = 0x04ec + 0x19d8; // [WeaponSettings]->projectile_launch_speed
+constexpr long OFF_PROJECTILESCALE = 0x1EC4 + 0x8; //CWeaponX!m_flProjectileScale //[WeaponSettings]->projectile_gravity_scale + [WeaponSettingsMeta].base
+constexpr long OFF_PROJECTILESPEED = 0x1EC4; //CWeaponX!m_flProjectileSpeed //[WeaponSettings]->projectile_launch_speed + [WeaponSettingsMeta].base
 constexpr long OFF_OFFHAND_WEAPON = 0x1954; // [RecvTable.DT_BaseCombatCharacter]->m_latestNonOffhandWeapons
 constexpr long OFF_CURRENTZOOMFOV = 0x15e0 + 0x00b8; // [RecvTable.DT_WeaponX]->m_playerData + [RecvTable.DT_WeaponPlayerData]->m_curZoomFOV
 constexpr long OFF_TARGETZOOMFOV = 0x15e0 + 0x00bc; // [RecvTable.DT_WeaponX]->m_playerData + [RecvTable.DT_WeaponPlayerData]->m_targetZoomFOV
@@ -81,7 +81,7 @@ constexpr long OFF_HIGHLIGHT_TYPE_SIZE = 0x34;
 constexpr long OFF_GLOW_THROUGH_WALL = 0x26c; //[DT_HighlightSettings].?
 constexpr long OFF_GLOW_FIX = 0x278;
 constexpr long OFF_GLOW_HIGHLIGHT_ID = 0x29C; //[DT_HighlightSettings].m_highlightServerActiveStates
-constexpr long OFF_GLOW_HIGHLIGHTS = 0xb13c6a0; // [Miscellaneous]->HighlightSettings
+constexpr long OFF_GLOW_HIGHLIGHTS = 0xb17e220; // [Miscellaneous]->HighlightSettings
 constexpr long OFF_GLOW_ENABLE = 0x26c; //
  
 // Item

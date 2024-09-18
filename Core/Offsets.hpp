@@ -1,4 +1,4 @@
- #pragma once
+#pragma once
     #include <string>
     // https://www.unknowncheats.me/forum/4197562-post16297.html
     // GameVersion = v3.0.79.51

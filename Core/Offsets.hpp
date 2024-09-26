@@ -85,6 +85,3 @@ constexpr long OFF_GLOW_ENABLE = 0x27c; // ? unused
  
 // Item
 constexpr long OFF_CUSTOM_SCRIPT_INT = 0x1568; // [RecvTable.DT_PropSurvival]->m_customScriptInt
- 
-// Item
-constexpr long OFF_CUSTOM_SCRIPT_INT = 0x1568; // [RecvTable.DT_PropSurvival]->m_customScriptInt

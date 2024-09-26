@@ -3,27 +3,27 @@
 // https://www.unknowncheats.me/forum/apex-legends/319804-apex-legends-reversal-structs-offsets.html
  
 std::string CheatVersion = "Version 1.1.4";
-std::string GameVersion = "v3.0.80.27"; // [Miscellaneous]->GameVersion
+std::string GameVersion = "v3.0.81.36"; // [Miscellaneous]->GameVersion
  
 // Core
 constexpr long OFF_REGION = 0x140000000; // [Static]->Region
-constexpr long OFF_LEVEL = 0x18356c4; // [Miscellaneous]->LevelName
+constexpr long OFF_LEVEL = 0x18356C4; // [Miscellaneous]->LevelName
 constexpr long OFF_LOCAL_PLAYER = 0x24342B8; // [Miscellaneous]->LocalPlayer
 constexpr long OFF_ENTITY_LIST = 0x1F61048; // [Miscellaneous]->cl_entitylist
 constexpr long OFF_NAME_INDEX = 0x38; // NameIndex
-constexpr long OFF_NAME_LIST = 0xd425fe0; // [Miscellaneous]->NameList
+constexpr long OFF_NAME_LIST = 0xD426160; // [Miscellaneous]->NameList
 constexpr long OFF_GAMEMODE = 0x0242d460; // [ConVars]->mp_gamemode
 constexpr long OFF_SQUAD_ID = 0x0344; // [RecvTable.DT_BaseEntity]->m_squadID
 constexpr long OFF_GLOBAL_VARS = 0x18351C0; // [Miscellaneous]->GlobalVars
  
 // HUD
-constexpr long OFF_VIEWRENDER = 0x76E8738; // [Miscellaneous]->ViewRender
-constexpr long OFF_VIEWMATRIX = 0x11a350; // [Miscellaneous]->ViewMatrix
+constexpr long OFF_VIEWRENDER = 0x76E88B8; // [Miscellaneous]->ViewRender
+constexpr long OFF_VIEWMATRIX = 0x11A350; // [Miscellaneous]->ViewMatrix
  
 // Buttons
-constexpr long OFF_INATTACK = 0x76e8820; // [Buttons]->in_attack
-constexpr long OFF_IN_JUMP = 0x76e8940; // [Buttons]->in_jump
-constexpr long OFF_IN_DUCK = 0x76e8a30; // [Buttons]->in_duck
+constexpr long OFF_INATTACK = 0x76E89C0; // [Buttons]->in_attack
+constexpr long OFF_IN_JUMP = 0x76E8AA8; // [Buttons]->in_jump
+constexpr long OFF_IN_DUCK = 0x76E89E0; // [Buttons]->in_duck
 constexpr long OFF_IN_FORWARD = 0x76e8770; // [Buttons]->in_forward
 constexpr long OFF_IN_BACKWARD = 0x76e8798; // [Buttons]->in_backward
 constexpr long OFF_TRAVERSAL_START_TIME = 0x2b70; // [RecvTable.DT_LocalPlayerExclusive]->m_traversalStartTime
@@ -82,6 +82,9 @@ constexpr long OFF_GLOW_FIX = 0x278;
 constexpr long OFF_GLOW_HIGHLIGHT_ID = 0x29C; //[DT_HighlightSettings].m_highlightServerActiveStates
 constexpr long OFF_GLOW_HIGHLIGHTS = 0xb199720; // [Miscellaneous]->HighlightSettings
 constexpr long OFF_GLOW_ENABLE = 0x27c; // ? unused
+ 
+// Item
+constexpr long OFF_CUSTOM_SCRIPT_INT = 0x1568; // [RecvTable.DT_PropSurvival]->m_customScriptInt
  
 // Item
 constexpr long OFF_CUSTOM_SCRIPT_INT = 0x1568; // [RecvTable.DT_PropSurvival]->m_customScriptInt

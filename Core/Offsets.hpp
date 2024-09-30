@@ -1,8 +1,8 @@
 #pragma once
 #include <string>
-// https://www.unknowncheats.me/forum/apex-legends/319804-apex-legends-reversal-structs-offsets.html
+// GameVersion = v3.0.81.36
  
-std::string CheatVersion = "Version 1.1.4";
+std::string CheatVersion = "Version 1.0.1";
 std::string GameVersion = "v3.0.81.36"; // [Miscellaneous]->GameVersion
  
 // Core
@@ -11,8 +11,8 @@ constexpr long OFF_LEVEL = 0x18356C4; // [Miscellaneous]->LevelName
 constexpr long OFF_LOCAL_PLAYER = 0x24342B8; // [Miscellaneous]->LocalPlayer
 constexpr long OFF_ENTITY_LIST = 0x1F61048; // [Miscellaneous]->cl_entitylist
 constexpr long OFF_NAME_INDEX = 0x38; // NameIndex
-constexpr long OFF_NAME_LIST = 0xD426160; // [Miscellaneous]->NameList
-constexpr long OFF_GAMEMODE = 0x0242d460; // [ConVars]->mp_gamemode
+constexpr long OFF_NAME_LIST = 0xd426160; // [Miscellaneous]->NameList
+constexpr long OFF_GAMEMODE = 0x0246c460; // [ConVars]->mp_gamemode
 constexpr long OFF_SQUAD_ID = 0x0344; // [RecvTable.DT_BaseEntity]->m_squadID
 constexpr long OFF_GLOBAL_VARS = 0x18351C0; // [Miscellaneous]->GlobalVars
  
@@ -21,11 +21,11 @@ constexpr long OFF_VIEWRENDER = 0x76E88B8; // [Miscellaneous]->ViewRender
 constexpr long OFF_VIEWMATRIX = 0x11A350; // [Miscellaneous]->ViewMatrix
  
 // Buttons
-constexpr long OFF_INATTACK = 0x76E89C0; // [Buttons]->in_attack
-constexpr long OFF_IN_JUMP = 0x76E8AA8; // [Buttons]->in_jump
-constexpr long OFF_IN_DUCK = 0x76E89E0; // [Buttons]->in_duck
-constexpr long OFF_IN_FORWARD = 0x76e8770; // [Buttons]->in_forward
-constexpr long OFF_IN_BACKWARD = 0x76e8798; // [Buttons]->in_backward
+constexpr long OFF_INATTACK = 0x076e89c0; // [Buttons]->in_attack
+constexpr long OFF_IN_JUMP = 0x076e8aa8; // [Buttons]->in_jump
+constexpr long OFF_IN_DUCK = 0x076e8bb0; // [Buttons]->in_duck
+constexpr long OFF_IN_FORWARD = 0x076e88f0; // [Buttons]->in_forward
+constexpr long OFF_IN_BACKWARD = 0x076e8918; // [Buttons]->in_backward
 constexpr long OFF_TRAVERSAL_START_TIME = 0x2b70; // [RecvTable.DT_LocalPlayerExclusive]->m_traversalStartTime
 constexpr long OFF_TRAVERSAL_PROGRESS = 0x2b6c; // [RecvTable.DT_LocalPlayerExclusive]->m_traversalProgress
 constexpr long OFF_WALL_RUN_START_TIME = 0x3674; // [RecvTable.DT_LocalPlayerExclusive]->m_wallRunStartTime
@@ -62,7 +62,7 @@ constexpr long OFF_GRAPPLE_ATTACHED = 0x2d50; // [RecvTable.DT_Player]->m_grappl
  
 // Weapon
 constexpr long OFF_WEAPON_HANDLE = 0x1944; // [RecvTable.DT_Player]->m_latestPrimaryWeapons
-constexpr long OFF_WEAPON_INDEX = 0x1788; // [RecvTable.DT_WeaponX]->m_weaponNameIndex
+constexpr long OFF_WEAPON_INDEX = 0x1788; // [RecvTable.DT_WeaponX]->m_weaponNameIndex ?
 constexpr long OFF_PROJECTILESCALE = 0x04f4 + 0x19d8; // [WeaponSettings]->projectile_gravity_scale + 0x8
 constexpr long OFF_PROJECTILESPEED = 0x04ec + 0x19d8; // [WeaponSettings]->projectile_launch_speed
 constexpr long OFF_OFFHAND_WEAPON = 0x1954; // [RecvTable.DT_BaseCombatCharacter]->m_latestNonOffhandWeapons
@@ -80,7 +80,7 @@ constexpr long OFF_HIGHLIGHT_TYPE_SIZE = 0x34;
 constexpr long OFF_GLOW_THROUGH_WALL = 0x26c; //[DT_HighlightSettings].?
 constexpr long OFF_GLOW_FIX = 0x278;
 constexpr long OFF_GLOW_HIGHLIGHT_ID = 0x29C; //[DT_HighlightSettings].m_highlightServerActiveStates
-constexpr long OFF_GLOW_HIGHLIGHTS = 0xb199720; // [Miscellaneous]->HighlightSettings
+constexpr long OFF_GLOW_HIGHLIGHTS = 0xB1DA3A0; // [Miscellaneous]->HighlightSettings
 constexpr long OFF_GLOW_ENABLE = 0x27c; // ? unused
  
 // Item
